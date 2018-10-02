@@ -14,6 +14,7 @@
 		886CF0922160F68500923D2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 886CF0902160F68500923D2C /* Main.storyboard */; };
 		886CF0942160F68700923D2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 886CF0932160F68700923D2C /* Assets.xcassets */; };
 		886CF0972160F68700923D2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 886CF0952160F68700923D2C /* LaunchScreen.storyboard */; };
+		88CB871821636532005F1435 /* About.html in Resources */ = {isa = PBXBuildFile; fileRef = 88CB871721636532005F1435 /* About.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		886CF0932160F68700923D2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		886CF0962160F68700923D2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		886CF0982160F68700923D2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88CB871721636532005F1435 /* About.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = About.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				886CF0902160F68500923D2C /* Main.storyboard */,
 				8865C46921615737005E43B1 /* AuthorViewController.swift */,
 				8865C467216153AA005E43B1 /* AboutViewController.swift */,
+				88CB871721636532005F1435 /* About.html */,
 				886CF0932160F68700923D2C /* Assets.xcassets */,
 				886CF0952160F68700923D2C /* LaunchScreen.storyboard */,
 				886CF0982160F68700923D2C /* Info.plist */,
@@ -129,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				886CF0972160F68700923D2C /* LaunchScreen.storyboard in Resources */,
+				88CB871821636532005F1435 /* About.html in Resources */,
 				886CF0942160F68700923D2C /* Assets.xcassets in Resources */,
 				886CF0922160F68500923D2C /* Main.storyboard in Resources */,
 			);
