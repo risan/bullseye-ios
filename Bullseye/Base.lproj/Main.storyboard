@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +12,254 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Bullseye" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="Xnr-Ke-bpe">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HkU-jn-Yj9">
+                                <rect key="frame" x="234" y="189" width="100" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                <size key="titleShadowOffset" width="0.0" height="1"/>
+                                <state key="normal" title="Hit Me!" backgroundImage="Button-Normal">
+                                    <color key="titleColor" red="0.70364054568527923" green="0.072183766864101245" blue="0.0" alpha="0.71666309931506844" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="Button-Highlighted">
+                                    <color key="titleColor" red="0.70196078431372544" green="0.070588235294117646" blue="0.0" alpha="0.71666309930000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="hitMe" destination="BYZ-38-t0r" eventType="touchUpInside" id="uUc-l0-R8G"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Put the Bullseye as close as you can to:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t67-bM-id1">
+                                <rect key="frame" x="116" y="59" width="303.00000000000006" height="19.000000000000028"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLk-dO-KjH">
+                                <rect key="frame" x="60" y="125" width="10" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="1" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="a2i-La-DG8">
+                                <rect key="frame" x="74" y="121" width="420" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gs-bf-ifp">
+                                <rect key="frame" x="500" y="125" width="29" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvy-ae-KfY">
+                                <rect key="frame" x="425" y="59" width="28.999999999999858" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwD-65-7DI">
+                                <rect key="frame" x="20" y="252" width="31.999999999999972" height="32.000000000000057"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="StartOverIcon" backgroundImage="SmallButton"/>
+                                <connections>
+                                    <action selector="startOver" destination="BYZ-38-t0r" eventType="touchUpInside" id="wCp-02-2Rk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Qg-1x-yId">
+                                <rect key="frame" x="516" y="252.17688553389917" width="32" height="32.000000000000057"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="InfoButton" backgroundImage="SmallButton"/>
+                                <connections>
+                                    <segue destination="xs5-Xy-v5z" kind="presentation" id="4Ii-vB-bNx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7i-vs-F3z">
+                                <rect key="frame" x="89" y="259.17688553389905" width="51" height="19.000000000000028"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="999999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEG-vv-xTG">
+                                <rect key="frame" x="147" y="259.17688553389905" width="57.999999999999929" height="19.000000000000028"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Round:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aV7-H5-tiJ">
+                                <rect key="frame" x="398" y="259.17688553389905" width="56.000000000000014" height="19.000000000000028"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vkP-jA-IDO">
+                                <rect key="frame" x="460" y="259.17688553389905" width="19.999999999999943" height="19.000000000000028"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="roundLabel" destination="vkP-jA-IDO" id="Rt8-co-0Qy"/>
+                        <outlet property="scoreLabel" destination="LEG-vv-xTG" id="XVq-GZ-rBG"/>
+                        <outlet property="slider" destination="a2i-La-DG8" id="ToM-yR-XQ0"/>
+                        <outlet property="targetLabel" destination="jvy-ae-KfY" id="Io7-ha-D46"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-22.183098591549296" y="46.875"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="eFW-w2-Ayx">
+            <objects>
+                <viewController id="xs5-Xy-v5z" customClass="AboutViewController" customModule="Bullseye" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TXG-cE-0b5">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="e2N-lE-kQA">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FD3-Mz-zAV">
+                                <rect key="frame" x="20" y="55" width="528" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Welcome to BullsEye! 
+
+To play simply move the slider as close as possible to the given value. 
+
+The closer it gets, the bigger your points!</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About BullsEye" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAd-qL-zYo">
+                                <rect key="frame" x="212" y="20" width="126" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KM4-OM-U3f">
+                                <rect key="frame" x="387" y="262" width="161" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                <size key="titleShadowOffset" width="0.0" height="1"/>
+                                <state key="normal" title="About the Author" backgroundImage="Button-Normal">
+                                    <color key="titleColor" red="0.70196078429999997" green="0.070588235289999995" blue="0.0" alpha="0.71666309930000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="Button-Highlighted"/>
+                                <connections>
+                                    <segue destination="4r7-RO-IzC" kind="presentation" id="gS7-12-Sjv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11p-Cc-cfZ">
+                                <rect key="frame" x="279" y="262" width="100" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <size key="titleShadowOffset" width="0.0" height="1"/>
+                                <state key="normal" title="Close" backgroundImage="Button-Normal">
+                                    <color key="titleColor" red="0.70196078431372544" green="0.070588235294117646" blue="0.0" alpha="0.71666309930000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="Button-Highlighted"/>
+                                <connections>
+                                    <action selector="close" destination="xs5-Xy-v5z" eventType="touchUpInside" id="iUM-8n-ffD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="rcb-he-8Ys"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hbn-0p-c2E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="714.08450704225356" y="46.875"/>
+        </scene>
+        <!--Author View Controller-->
+        <scene sceneID="6eM-fg-1Ye">
+            <objects>
+                <viewController id="4r7-RO-IzC" customClass="AuthorViewController" customModule="Bullseye" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H5G-s6-6v1">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Risan Bagja Pradana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSK-Ia-Mbl">
+                                <rect key="frame" x="206" y="178" width="156" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="us2-C7-5BE">
+                                <rect key="frame" x="265" y="248" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="close" destination="4r7-RO-IzC" eventType="touchUpInside" id="dfr-e8-KlR"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="motlawa-xs" translatesAutoresizingMaskIntoConstraints="NO" id="KMd-RX-7lh">
+                                <rect key="frame" x="221" y="43" width="127" height="127"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="lS7-yE-VE8"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T50-BD-DZH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1435.5633802816901" y="46.875"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Background" width="568" height="320"/>
+        <image name="Button-Highlighted" width="100" height="37"/>
+        <image name="Button-Normal" width="100" height="37"/>
+        <image name="InfoButton" width="10" height="22"/>
+        <image name="SmallButton" width="32" height="32"/>
+        <image name="StartOverIcon" width="20" height="20"/>
+        <image name="motlawa-xs" width="1000" height="1000"/>
+    </resources>
 </document>
