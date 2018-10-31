@@ -7,3 +7,7 @@ This game challenges the user to slide the slider as close as possible to the
 given value. The closer it gets, the higher the points.
 
 ![Bull's Eye in Action](https://media.giphy.com/media/8TzojHt7pxqv8GhXnW/giphy.gif)
+
+## License
+
+MIT © [Risan Bagja Pradana](https://bagja.net)
